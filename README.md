@@ -2,7 +2,7 @@
 
 This is a Monero mining rig remote monitoring suite written in python and jQuery. It requires the use of XMR-proxy by Atrides (https://github.com/Atrides/xmr-proxy). I have never coded anything outside of R, so this has been something of an adventure, however humble it may be. 
 
-The code is made with the 'men in sheds' methodology (i.e. never having seen something before, keep hitting it until it works), so there are large amounts of the code which I am sure seem at best humorous, and at worst quite baffling to the seasoned developer. 
+The code is made with the 'men in sheds' methodology (i.e. never having seen something before, keep hitting it until it works), so there are large amounts of the code which I am sure seem at best humorous, and at worst quite baffling to the seasoned developer. It works though :)
 
 #Features
 
@@ -11,18 +11,22 @@ The code is made with the 'men in sheds' methodology (i.e. never having seen som
 * Uptime monitoring
 * Built-in web server, allowing you to monitor your rigs locally or remotely.
 
-#How to use
-
-* Windows: 
+#Installation
+* Windows:
 - install python 2.7.3
 - install all dependencies (pandas and numpy)
 - install xmr-proxy (good guide for windows users here: https://bitcointalk.org/index.php?topic=735738.msg8331755#msg8331755)
 - change logging to 'INFO' mode, to save space (in xmr-proxy-master/config.py)
 - give your miners static IP addresses, if you can. 
 - point all your miners to the IP running the xmr-proxy
-- copy this repository into the parent directory of xmr-proxy (if not, you will have to edit the logfile path in MMM.py)
+- copy this repository into the parent directory of xmr-proxy (if not, you will have to edit the logfile path in mmm_config.py)
 - open the MMM_windows_start.bat file (or make it run automatically at startup by making a shortcut, running shell:startup and putting it there)
-- watch your rigs.
+- open your web browser to http://127.0.0.1:8000/mmm_web.html
+
+*Linux
+- clone this repository into the parent directory of xmr-proxy (if not, you will have to edit the logfile path in mmm_config.py).
+- python mmm_code.py
+- open your web browser to http://127.0.0.1:8000/mmm_web.html
 
 #ToDo
 
@@ -45,10 +49,6 @@ Monero Mining Monitor is built in python, tested on 2.7.3. Requirements:
 * pandas (python add-on)
 * numpy (python add-on, http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy)
 * functioning installation of xmr-proxy
-
-#Installation
-
-* just copy and start xmr-proxy.py
 
 #Contact
 
