@@ -21,7 +21,7 @@ The code is made with the 'men in sheds' methodology (i.e. never having seen som
 - give your miners static IP addresses, if you can. 
 - point all your miners to the IP running the xmr-proxy
 - copy this repository into the parent directory of xmr-proxy (if not, you will have to edit the logfile path in MMM.py)
-- open the MMM.bat file (or make it run automatically at startup by making a shortcut, running shell:startup and putting it there)
+- open the MMM_windows_start.bat file (or make it run automatically at startup by making a shortcut, running shell:startup and putting it there)
 - watch your rigs.
 
 #ToDo
