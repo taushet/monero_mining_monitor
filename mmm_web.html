@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Monero Mining Monitor" content="">
+    <meta name="Taushet" content="">
+    <title>Monero Mining Monitor</title>
+    <link href="mmm_files/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="mmm_ss.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="mmm_files/favicon.ico"/>
+	<script src="http://d3js.org/d3.v4.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">Monero Mining Monitor</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+			<li><a href=''><span id="timer"></span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+		<div class="over">
+			<span id="poolInfo"></span><span class="text-muted"> | </span><span id="server_info"></span><span class="text-muted"> | </span><span id="log_start"></span>
+		</div>
+		<hr/>
+      <div class="row">
+        <div class="col-md-4">
+			<span id="short_heading"></span>
+			<span id="minerlist_short"/><span>
+		</div>
+		<div class="col-md-8">
+			<svg id="short" width="750" height="300"></svg>
+		</div>
+      </div>
+	  <hr/>
+	  <div class="row">
+        <div class="col-md-4">
+			<span id="long_heading"></span>
+			<span id="minerlist_all"/><span>
+		</div>
+		<div class="col-md-8">
+			<svg id="long" width="750" height="300"></svg>
+		</div>
+      </div>
+	  <hr/>
+	  <div class="row">
+		<div class="col-md-8">
+			<h3>Info</h3>
+			<span id="info_s"></span>
+			<p>The graphs give values in <i>shares</i> per time period, not <i>hashes</i>. This monitor thus assumes that your diff is fixed. If not, the monitor will still work, but may give you misleading data regarding the effectiveness of your miners. It is also recommended that you assign your miners static IP addresses.</p>
+			
+			<p><b>Q</b> = acceptance % of shares.<br/>
+			<b>A</b> = miner uptime % </i>while the proxy is active</i>.</p>
+			<p>Questions? Issues? Either contact me on reddit <a href="https://www.reddit.com/message/compose?to=taushet&subject=MoneroMiningMonitor">u/taushet</a> or the GitHub repo.</p>
+			<p/>
+		</div>
+        <div class="col-md-4">
+			<h3>Pool Connections</h3>
+			<span id="poollist"></span>
+		</div>
+		
+      </div>
+
+    </div><!-- /.container -->
+	<footer class="footer">
+      <div class="container">
+        <span class="text-muted">by <b>taushet</b> | donate: <i>4BHeoptXyZ4BkqHcyQo6QSA51q7M9uYAKB75bAuCwcbUavsbcjwe6ocJhRDyJCHSTd9Cenq418xq3P2dZK2J1CVHKbkTjTi</i></span>
+      </div>
+    </footer>
+    <script src="mmm_js.js"></script>
+    <script src="/mmm_files/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
