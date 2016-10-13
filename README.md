@@ -13,7 +13,8 @@ A small disclaimer: I have never coded anything outside of R, so this has been s
 * Built-in web server, allowing you to monitor your rigs locally or remotely
 
 #Installation
-* Windows:
+Windows:
+
 - install python 2.7.3
 - install all dependencies (pandas and numpy)
 - install xmr-proxy (good guide for windows users here: https://bitcointalk.org/index.php?topic=735738.msg8331755#msg8331755)
@@ -24,7 +25,8 @@ A small disclaimer: I have never coded anything outside of R, so this has been s
 - open the MMM_windows_start.bat file (or make it run automatically at startup by making a shortcut, running shell:startup and putting it there)
 - open your web browser to http://127.0.0.1:8000/mmm_web.html
 
-*Linux
+Linux:
+
 - clone this repository into the parent directory of xmr-proxy (if not, you will have to edit the logfile path in mmm_config.py).
 - python mmm_code.py
 - open your web browser to http://127.0.0.1:8000/mmm_web.html
@@ -47,8 +49,8 @@ A small disclaimer: I have never coded anything outside of R, so this has been s
 Monero Mining Monitor is built in python, tested on 2.7.3. Requirements:
 
 * Python 2.7+
-* pandas (python add-on, https://pypi.python.org/pypi/pandas/0.19.0/#downloads)
-* numpy (python add-on, http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy)
+* pandas (https://pypi.python.org/pypi/pandas/0.19.0/#downloads)
+* numpy (http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy)
 * functioning installation of xmr-proxy
 
 #Contact
