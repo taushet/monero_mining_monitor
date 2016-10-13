@@ -1,15 +1,16 @@
 #Description
 
-This is a Monero mining rig remote monitoring suite written in python and jQuery. It requires the use of XMR-proxy by Atrides (https://github.com/Atrides/xmr-proxy). I have never coded anything outside of R, so this has been something of an adventure, however humble it may be. 
+This is a Monero mining rig remote monitoring suite written in python and jQuery. It requires the use of XMR-proxy by Atrides (https://github.com/Atrides/xmr-proxy). It allows you to fully monitor your rigs via the web or locally.
 
-The code is made with the 'men in sheds' methodology (i.e. never having seen something before, keep hitting it until it works), so there are large amounts of the code which I am sure seem at best humorous, and at worst quite baffling to the seasoned developer. It works though :)
+A small disclaimer: I have never coded anything outside of R, so this has been something of an adventure, however humble it may be. The code is made with the 'men in sheds' methodology (i.e. never having seen something before, keep hitting it until it works), so there are large amounts of the code which I am sure seem at best humorous, and at worst quite baffling to the seasoned developer. It works though :)
 
 #Features
 
-* Detailed statistics per rig.
+* Detailed statistics per rig
 * Share quality monitoring
 * Uptime monitoring
-* Built-in web server, allowing you to monitor your rigs locally or remotely.
+* Pool connection monitoring
+* Built-in web server, allowing you to monitor your rigs locally or remotely
 
 #Installation
 * Windows:
@@ -35,7 +36,7 @@ The code is made with the 'men in sheds' methodology (i.e. never having seen som
 
 #Configuration
 
-* Configuration is done both in the javascript file (monitor_js.js) and the main python file (MMM.py)
+* Configuration is done via mmm_config.py. Web refresh rates must be adjusted in the mmm_js.js
 
 #Donations 
 
