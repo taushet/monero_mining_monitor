@@ -2,8 +2,6 @@
 
 This is a Monero mining rig remote monitoring suite written in python and jQuery. It requires the use of XMR-proxy by Atrides (https://github.com/Atrides/xmr-proxy). It allows you to fully monitor your rigs via the web or locally.
 
-A small disclaimer: I have never coded anything outside of R, so this has been something of an adventure, however humble it may be. The code is made with the 'men in sheds' methodology (i.e. never having seen something before, keep hitting it until it works), so there are large amounts of the code which I am sure seem at best humorous, and at worst quite baffling to the seasoned developer. It works though :)
-
 #Features
 
 * Detailed statistics per rig
