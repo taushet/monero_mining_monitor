@@ -47,7 +47,7 @@ A small disclaimer: I have never coded anything outside of R, so this has been s
 Monero Mining Monitor is built in python, tested on 2.7.3. Requirements:
 
 * Python 2.7+
-* pandas (python add-on)
+* pandas (python add-on, https://pypi.python.org/pypi/pandas/0.19.0/#downloads)
 * numpy (python add-on, http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy)
 * functioning installation of xmr-proxy
 
