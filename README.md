@@ -22,11 +22,13 @@ Windows:
 - give your miners static IP addresses, if you can. 
 - point all your miners to the IP running the xmr-proxy
 - copy this repository into the parent directory of xmr-proxy (if not, you will have to edit the logfile path in mmm_config.py)
-- open the MMM_windows_start.bat file (or make it run automatically at startup by making a shortcut, running shell:startup and putting it there)
+- open the mmm_windows_start.bat file (or make it run automatically at startup by making a shortcut, running shell:startup and putting it there)
 - open your web browser to http://127.0.0.1:8000/mmm_web.html
 
 Linux:
 
+- install python 2.7.3
+- clone install xmr-proxy (https://github.com/Atrides/xmr-proxy)
 - clone this repository into the parent directory of xmr-proxy (if not, you will have to edit the logfile path in mmm_config.py).
 - python mmm_code.py
 - open your web browser to http://127.0.0.1:8000/mmm_web.html
@@ -59,7 +61,7 @@ Monero Mining Monitor is built in python, tested on 2.7.3. Requirements:
 
 #Credits
 
-* This is a clown suit for the logfile of xmr-proxy, so big thanks to Atrides.
+* This is a clown suit for xmr-proxy, so big thanks to Atrides.
 * Thanks to the Bootstrap people for making css/javascript easy.
 
 #License
